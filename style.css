@@ -21,7 +21,7 @@ body {
   display: inline-block;
   border-bottom: 3px solid #3f6b9c;
 }
-
+/* line under the heading */
 .heading-line {
   width: 100%;
   height: 4px;
@@ -31,7 +31,7 @@ body {
   border-radius: 2px;
   box-shadow: 0 2px 6px rgba(0, 20, 40, 0.6);
 }
-
+/* spacing between links, wraps on small screens */
 .sub-nav {
   display: flex;
   gap: 2.8rem;
@@ -40,7 +40,7 @@ body {
   border-bottom: 2px solid #2a4b6e;
   flex-wrap: wrap;
 }
-
+/* default look of each nav link */
 .sub-nav a {
   color: #b6d0f0;
   font-size: 1.6rem;
@@ -51,18 +51,18 @@ body {
   border-bottom: 3px solid transparent;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
-
+/* lights up the link and underlines it when hovered */
 .sub-nav a:hover {
   color: #ffffff;
   border-bottom-color: #80b0e0;
 }
-
+/* centers the box */
 .bubble-container {
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
 }
-
+/* the main card thing */
 .main-info-square {
   background: #14283f;
   border: 1px solid #2a4b6e;
@@ -72,16 +72,69 @@ body {
   text-align: center;
   box-shadow: 0 4px 18px rgba(0, 10, 25, 0.55);
 }
-
+/* heading for the paragraph */
 .main-info-square h2 {
   font-size: 2rem;
   color: #ffffff;
   margin-bottom: 1rem;
 }
-
+/* paragraph */
 .main-info-square p {
   font-size: 1.05rem;
   line-height: 1.6;
   color: #c3d5ef;
 }
 /* TIMELINE */
+/* wraps the whole timeline; relative positioning lets the vertical line and items place themselves against it/beside it */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+/* the vertical line running down the middle of the timeline */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #3b5570;
+  transform: translateX(-50%); /* put the line in the middle */
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1.2rem 2.5rem;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-box {
+  display: inline-block;
+  background: #14283f;
+  border: 1px solid #2a4b6e;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  max-width: 100%;
+  text-align: left;
+  box-shadow: 0 4px 18px rgba(0, 10, 25, 0.55);
+}
+
+.timeline-box h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-box p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #c3d5ef;
+}
