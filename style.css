@@ -138,3 +138,13 @@ body {
   line-height: 1.5;
   color: #c3d5ef;
 }
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
