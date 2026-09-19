@@ -85,7 +85,7 @@ body {
   color: #c3d5ef;
 }
 /* TIMELINE */
-/* wraps the whole timeline; relative positioning lets the vertical line and items place themselves against it/beside it */
+/* wraps the whole timeline, relative positioning lets the vertical line and items place themselves against it/beside it */
 .timeline {
   position: relative;
   max-width: 800px;
