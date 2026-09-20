@@ -148,5 +148,14 @@ body {
   left: 50%;
   text-align: left;
 }
-
-
+/* Today's use of computer section */
+.today {
+  max-width: 1100px;
+  margin: 3.5rem auto 2rem auto;
+  padding: 0 0.5rem;
+}
+.today-header {
+  margin-bottom: 1rem;
+  border-left: 4px solid #3f6b9c;
+  padding-left: 1rem;
+}
