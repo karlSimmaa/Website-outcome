@@ -148,14 +148,34 @@ body {
   left: 50%;
   text-align: left;
 }
+
+
 /* Today's use of computer section */
 .today {
-  max-width: 1100px;
-  margin: 3.5rem auto 2rem auto;
-  padding: 0 0.5rem;
+  background: #14283f;
+  border: 1px solid #2a4b6e;
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+  max-width: 560px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(0, 10, 25, 0.55);
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 .today-header {
   margin-bottom: 1rem;
   border-left: 4px solid #3f6b9c;
   padding-left: 1rem;
 }
+
+.today-header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #d4e2ff;
+}
+
+.today-header p {
+  color: #8da6c9;
+  font-size: 1rem;
+}
+
