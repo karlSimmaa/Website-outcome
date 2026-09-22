@@ -156,8 +156,8 @@ body {
   font-weight: 500;
   color: #d4e2ff;
   margin-bottom: 1.5rem;
-  border-left: 4px solid #3f6b9c;
-  padding-left: 1rem;
+  width: 100%; 
+  text-align: auto;
 }
 
 .today-row {
@@ -171,5 +171,25 @@ body {
   width: calc(33.333% - 16px);
   margin-right: 1rem;
   margin-bottom: 1.5rem;
+}
+
+.today-row:last-child {
+  margin-right: 0;
+}
+
+.today-row h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.3px;
+  border-left: 4px solid #3f6b9c;
+  padding-left: 1rem;
+}
+
+.today-row p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #c3d5ef;
 }
 
