@@ -60,23 +60,23 @@ body {
 .bubble-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 46px;
 }
 /* the main card thing */
 .main-info-square {
   background: #14283f;
   border: 1px solid #2a4b6e;
   border-radius: 16px;
-  padding: 2.5rem 3rem;
+  padding: 40 46px;
   max-width: 560px;
   text-align: center;
   box-shadow: 0 4px 18px rgba(0, 10, 25, 0.55);
 }
 /* heading for the paragraph */
 .main-info-square h2 {
-  font-size: 2rem;
+  font-size: 32px;
   color: #ffffff;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 /* paragraph */
 .main-info-square p {
@@ -90,7 +90,7 @@ body {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 16px 0;
 }
 /* the vertical line running down the middle of the timeline */
 .timeline::before {
@@ -115,6 +115,11 @@ body {
   left: 0;
   text-align: right;
 }
+/* alligns the item to the left for all timeline right */
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
 /* This makes the box */
 .timeline-box {
   display: inline-block;
@@ -127,6 +132,7 @@ body {
   box-shadow: 0 4px 18px rgba(0, 10, 25, 0.55);
 }
 
+/* all texts for the boxes of today's section */
 .timeline-box h3 {
   font-size: 1.2rem;
   color: #ffffff;
@@ -139,27 +145,22 @@ body {
   color: #c3d5ef;
 }
 
-.timeline-item.left {
-  left: 0;
-  text-align: right;
-}
 
-.timeline-item.right {
-  left: 50%;
-  text-align: left;
-}
 
 
 
 /* Today's use of computer section */
+
+/* The heading */
 .today-heading {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 500;
   color: #d4e2ff;
   margin-bottom: 1.5rem;
   width: 100%; 
   text-align: auto;
 }
+
 
 .today-row {
   background: #14283f;
@@ -169,8 +170,8 @@ body {
   box-shadow: 0 4px 12px rgb(0, 0, 0, 0.4);
   display: inline-block;
   vertical-align: top;
-  width: calc(33.333% - 16px);
-  margin-right: 1rem;
+  width: calc(33.333% - 16px);  /* This make the width 1/3 of the screen - 1 rem/16p */
+  margin-right: 16px;
   margin-bottom: 1.5rem;
 }
 
@@ -185,11 +186,11 @@ body {
   margin-bottom: 0.75rem;
   letter-spacing: 0.3px;
   border-left: 4px solid #3f6b9c;
-  padding-left: 1rem;
+  padding-left: 16px;
 }
 
 .today-row p {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.6;
   color: #c3d5ef;
 }
