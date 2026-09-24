@@ -67,7 +67,7 @@ body {
   background: #14283f;
   border: 1px solid #2a4b6e;
   border-radius: 16px;
-  padding: 40 46px;
+  padding: 40px 46px;
   max-width: 560px;
   text-align: center;
   box-shadow: 0 4px 18px rgba(0, 10, 25, 0.55);
@@ -101,21 +101,21 @@ body {
   bottom: 0;
   width: 4px;
   background: #3b5570;
-  transform: translateX(-50%); /* put the line in the middle */
+  transform: translateX(-50%); /* put the line back by half its own width so it's middled */
   border-radius: 2px;
 }
-/* same for the ".timeline" it positions the items against the line */
+/* left/right can place it beside the center line */
 .timeline-item {
   position: relative;
   width: 50%;
   padding: 1.2rem 2.5rem;
 }
-/* allign all text on the right to all timeline left */
+/* allign all text on the right to all timeline left/ esentially the text hugs center line */
 .timeline-item.left {
   left: 0;
   text-align: right;
 }
-/* alligns the item to the left for all timeline right */
+/* alligns the item to the left for all timeline right/ essentially the text hugs center line */
 .timeline-item.right {
   left: 50%;
   text-align: left;
@@ -161,7 +161,7 @@ body {
   text-align: auto;
 }
 
-
+/* row the boxes */
 .today-row {
   background: #14283f;
   border: 1px solid #2a4b6e;
@@ -179,6 +179,8 @@ body {
   margin-right: 0;
 }
 
+
+/* text designs */
 .today-row h3 {
   font-size: 1.4rem;
   font-weight: 600;
